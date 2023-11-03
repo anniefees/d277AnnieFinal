@@ -1,0 +1,44 @@
+:root { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title {
+    font-style: bold;
+}
+a {
+    color: blue;
+}
+a:hover{
+    color: #FF00FF;
+}
+img{
+    float: left;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    border: 3px solid #73AD21;
+  
+}
+div{
+    position: relative;
+    top: 100px;
+    left: 3px;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+}
+.buttons{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#bestEver{
+    float: right;
+}
