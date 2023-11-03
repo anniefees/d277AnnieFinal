@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Document</title>
+</head>
+
+</body>
+    <script> 
+        function matchEmail(){  
+            var em1 = document.getElementById("email1");  
+            var em2 = document.getElementById("email2");  
+            if(em1 == em2)
+            {   
+                alert("Information entered successfully ");
+            } else{  
+                alert("Emails did not match");  
+            }
+        }
+    </script>
+<body> 
+        <form>  
+        <h1 style="color:green">Contact</h1>   
+        <h3>Enter your information here and we will contact you to assist you.</h3>
+
+        <!--Enter First Name-->
+        <td>Enter First Name</td>
+        <input type="name" name="firstName" required placeholder="John"> <br><br>
+
+        <!-- Enter Last Name-->
+        <td>Enter Last Name</td>
+        <input type="name" name="lastName" required placeholder="Doe"> <br><br>
+
+        <!-- Enter Email -->  
+        <td> Enter Email </td>  
+        <input type = "email" name = "email1" required placeholder="myEmail@email.com"> <br><br>  
+          
+        <!-- Enter Confirm email -->  
+        <td> Confirm Email </td>  
+        <input type = "email" name = "email2" required placeholder="myEmail@email.com"> <br><br>  
+          
+        <!--Click to validate confirm password -->  
+        <button type = "submit" onclick="matchEmail()">Submit</button>  
+          
+        <!-- Click to reset fields -->  
+        <button type = "reset" value = "Reset" >Reset</button>  
+        </form>   
+</html>
