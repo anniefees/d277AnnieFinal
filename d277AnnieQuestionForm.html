@@ -19,14 +19,16 @@
 
     <body>
         <script> 
-            function matchEmail(){  
-                var em1 = document.getElementById("email1");  
-                var em2 = document.getElementById("email2");  
-                if(em1 == em2)
+            function matchEmail(form){  
+                email1 = form.email1.value; 
+                email2 = form.email2.value;
+                if(email1 != email2)
                 {   
-                    alert("Information entered successfully ");
+                    alert("Emails do not match. Try again!");
+                    return false;
                 } else{  
-                    alert("Emails did not match");  
+                    alert("Information entered correctly");
+                    return true;
                 }
             }
         </script>
@@ -35,7 +37,7 @@
         <h1 style="color:green">Contact</h1>   
         <h3>Enter your information here and we will contact you to assist you.</h3>
     </aside>
-    <form> 
+    <form onsubmit="return matchEmail(this)"> 
 
         <!--Enter First Name-->
         <td>Enter First Name</td>
@@ -54,7 +56,7 @@
         <input type = "email" name = "email2" required placeholder="myEmail@email.com"> <br><br>  
           
         <!--Click to validate confirm password -->  
-        <button type = "submit" onclick="matchEmail()">Submit</button>  
+        <button type = "submit">Submit</button>  
           
         <!-- Click to reset fields -->  
         <button type = "reset" value = "Reset" >Reset</button>  
