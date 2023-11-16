@@ -33,7 +33,7 @@
             }
         </script>
     </body> 
-    <form>  
+    <form onsubmit="return matchEmail(this)"> 
         <h1 style="color:green">Contact</h1>   
         <h3>Enter your information here and we will contact you to assist you.</h3>
         <form onsubmit="return matchEmail(this)"> 
@@ -58,7 +58,7 @@
         <textarea type="text area" cols="50" rows="4" name="Question" required placeholder="Write your quesiton here."></textarea><br><br>
           
         <!--Click to validate confirm password -->  
-        <button type = "submit" onclick="matchEmail()">Submit</button>   
+        <button type = "submit">Submit</button>   
           
         <!-- Click to reset fields -->  
         <button type = "reset" value = "Reset" >Reset</button>  
